@@ -32,6 +32,6 @@ Software
 
 ## Notes
 
-AI helped with some of the assembly code.
+AI Aided Assembly Code
 
 The assembler, test benches and build scripts are not in this repo, so it will not build straight from here.
