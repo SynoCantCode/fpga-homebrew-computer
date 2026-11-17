@@ -1,0 +1,9 @@
+; SKY: a DRAWN style, made from sky.png by make_window_style.py (frame.png -> frame.pic)
+; On the card: /SYSTEM/DESIGN/WINDOWS/SKY/ (STYLE.TXT + FRAME.PIC). A page uses it with:  style sky
+content 9 47 9 9
+picture frame.pic 7 45 51 7
+header 3 3 3 18 38 3F 06 0D
+title 4 1 0F 0F
+close -20 4 0
+full -36 4 0
+min -52 4 0

@@ -1,0 +1,8 @@
+; BIGSPRTS.TXT: the BIG sprites: pictures bigger than an icon (48 x 48, 64 x 64...), kept apart from the icons'
+; sprites (they're never offered for icons). The Decorator puts them on the desktop; Studio's Sprite button offers
+; them (after the ordinary sprites) for windows. A line each, like SPRITES.TXT:
+;   NAME.PIC                          a still picture
+;   NAME.PIC FRAMEWIDTH FRAMES SPEED  an animation strip (square frames side by side; SPEED = frames a second)
+crt64.pic 64 16 10
+smilecrt.pic 64 16 10
+crt48.pic 48 16 10

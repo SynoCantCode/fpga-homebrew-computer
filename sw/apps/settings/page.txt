@@ -1,0 +1,28 @@
+; SETTINGS: a real app (APP.BIN, from app.asm). Its desktop icon (the gear) opens it. The wallpaper (WALLPAPR.TXT),
+; and each app's desktop icon and label colour (saved in each app's own PAGE.TXT: its icon and label lines), and
+; whether it's on the desktop at all (#desk: Add to desktop / Remove from desktop; saved in APPS.TXT). The files in
+; /DESKTOP too (their icon and colour saved in /SYSTEM/DESIGN/ICONS.TXT). Scroll down: what it is (#kind), and Delete
+; (a desktop file: pressed twice; #note says how it went).
+title Settings
+style lavender
+size 36 11
+place 140 100
+hidden
+icon gear.pic
+text 0 0 Wallpaper:
+button 24 0 Next event 1
+button 30 0 None event 2
+text 0 2 Item:
+button 24 2 Next event 3
+text 0 4 Icon:
+button 24 4 Icon event 4
+text 0 6 Label:
+button 24 6 Colour event 5
+text 0 8 Desktop:
+button #desk 12 8 Remove event 6
+text 0 10 Kind:
+text #kind 12 10 an app
+text 0 12 File:
+button 12 12 Delete event 7
+text #note 0 13 -
+button 0 15 Close close

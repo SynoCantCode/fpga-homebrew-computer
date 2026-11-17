@@ -1,0 +1,7 @@
+; TERMINAL: the shell, full screen. A FULL-SCREEN app: it has no window. Opening it (its icon, its taskbar button,
+; Open on its menu) hands these `shell` lines to the shell and the window manager ends; the shell runs them as if
+; typed. Then it's the ordinary shell: every command works. Type desktop: the window manager comes back.
+title Terminal
+icon terminal.pic
+shell clear
+shell echo Terminal: the shell, full screen. Type desktop to go back to the desktop.

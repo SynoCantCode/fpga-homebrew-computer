@@ -1,0 +1,9 @@
+; MINIMAL: a DRAWN style, made from minimal.png by make_window_style.py (frame.png -> frame.pic)
+; On the card: /SYSTEM/DESIGN/WINDOWS/MINIMAL/ (STYLE.TXT + FRAME.PIC). A page uses it with:  style minimal
+content 8 27 8 8
+picture frame.pic 6 25 51 6
+header 3 3 3 18 38 3F 06 0D
+title 4 1 0F 0F
+close -20 4 0
+full -36 4 0
+min -52 4 0

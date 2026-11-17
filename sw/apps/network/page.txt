@@ -1,0 +1,19 @@
+; NETWORK: the Ethernet connection at a glance (a real app: app.asm). Its texts with #names are filled in by the
+; program; Connect asks the router for an address (DHCP), Refresh looks again.
+title Network
+style classic
+size 34 8
+place 180 110
+hidden
+icon netpair.pic
+text 0 0 Cable:
+text #link 9 0 ?
+text 0 1 IP:
+text #ip 9 1 none yet
+text 0 2 Router:
+text #router 9 2 -
+text 0 3 Mask:
+text #mask 9 3 -
+text #note 0 5 Connect: get an IP from the router
+button 0 7 Connect event 1
+button 12 7 Refresh event 2

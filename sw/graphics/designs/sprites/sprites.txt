@@ -1,0 +1,26 @@
+; SPRITES.TXT: the sprites Studio's Sprite and Icon buttons (and Settings' Icon button) go through, in this order.
+; A line each:
+;   NAME.PIC                          a still picture
+;   NAME.PIC FRAMEWIDTH FRAMES SPEED  an animation strip (its frames side by side; SPEED = frames a second)
+; Desktop icons are 32 x 32 (a strip of 32 x 32 frames animates on the desktop).
+; Also in this folder but NOT in the cycle (use them by name: `icon netpair.pic`, `animate C R netpair.pic 32 16 10`):
+; netpair.pic and cdspin.pic, 32 x 32 copies of my 64 x 64 network-pair and spinning-cd (16 frames each)
+; netoff.pic, netcable.pic, netok.pic: the taskbar tray's network light, 16 x 16, 16 frames each (my
+; wifi-disconnected, wifi-connected and internet-button): no network, the cable only, connected (WM's tray_load)
+gear.pic 32 12 10
+computer.pic 32 4 4
+network.pic 32 4 4
+cd.pic 32 8 10
+clock.pic 32 12 10
+camera.pic 32 16 10
+earth.pic 32 16 10
+envelope.pic 32 16 10
+floppy.pic 32 16 10
+hourglas.pic 32 16 10
+terminal.pic 32 16 10
+recycle.pic
+mic.pic 32 16 10
+star.pic 32 16 10
+folder.pic 32 16 10
+globe.pic 32 16 10
+paint.pic 32 16 10

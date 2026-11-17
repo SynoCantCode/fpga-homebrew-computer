@@ -1,0 +1,16 @@
+; BROWSER: web pages as text (a real app: app.asm). Type an address and press Go (or Enter): the kernel fetches it
+; (NET_CALLS + 16: net_fetch: an IP from the router if there's none, DNS, TCP, HTTP/1.0: http only, no https) and
+; the page's words show below, wrapped; scroll down for the rest (the arrows, Page Down, the scroll bar). Save: the
+; page as a text file on the desktop (/desktop/NAME.txt). Try: example.com, info.cern.ch (the first website), 68k.news
+title Browser
+style classic
+size 60 22
+place 32 24
+hidden
+icon globe.pic
+text 0 0 Address:
+input #url 9 0 36 1
+button 46 0 Go event 1
+button 51 0 Save event 2
+text #status 0 1 Type an address (example.com), then Go or Enter
+wrap #page 3 -

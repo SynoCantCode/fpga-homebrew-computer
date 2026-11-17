@@ -1,0 +1,2 @@
+; WALLPAPR.TXT: the wallpapers the Settings app goes through (its Next button), one file name a line, in this
+; folder (/SYSTEM/DESIGN/WALLPAPR/). Make one with make_picture.py --fill. Lines starting with ; are notes.

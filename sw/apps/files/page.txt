@@ -1,0 +1,14 @@
+; FILES: a real app (APP.BIN, from app.asm): the card's folders and files. Click / arrows: choose; Enter or a
+; second click: open (a folder: into it; .txt: read it; .pic: the wallpaper; an app's file: its window); Backspace: up. Delete (twice), Rename, Folder (type a name, Enter).
+title Files
+style classic
+size 44 16
+place 120 40
+hidden
+icon floppy.pic
+canvas 0 0 44 15
+button 0 15 Up event 1
+button 5 15 Open event 2
+button 12 15 Delete event 3
+button 21 15 Rename event 4
+button 30 15 Folder event 5

@@ -1,0 +1,15 @@
+; APPS.TXT: the INSTALLED apps, one folder name a line (up to 32). Each is opened only when you open it (its icon,
+; the taskbar's search). A name followed by " off" has no desktop icon (right-click an icon: Remove icon writes that);
+; it is still installed, and the search finds it.
+; On the card as /APPS/APPS.TXT; each app is the folder /APPS/NAME/ (see README.txt). Studio's Desktop button adds
+; a name here; new_app.py too. (sw/apps/hello is new_app.py's example: add its name to show it.)
+clock
+pong
+settings
+files
+terminal
+studio
+greet
+network
+browser
+decor

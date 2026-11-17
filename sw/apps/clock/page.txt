@@ -1,0 +1,17 @@
+; CLOCK: a real app (APP.BIN, from app.asm): the date and time from the DS3231 chip (or how long the computer has
+; been running, without it). Once a second its program draws the time; change its window here or in Studio (run
+; studio.bin clock). Its icon: the ticking clock strip. Internet: the clock set from the internet (NTP); +1h / -1h:
+; moved an hour (the time zone, kept in the chip, with it). #note says how it went
+; (hidden: it starts closed; its desktop icon or taskbar button opens it)
+title Clock
+style classic
+size 22 6
+place 96 272
+hidden
+animate 16 0 clock.pic 32 12 10
+icon clock.pic
+label 00
+text #note 0 3 Set it:
+button 0 5 Internet event 1
+button 11 5 +1h event 2
+button 17 5 -1h event 3

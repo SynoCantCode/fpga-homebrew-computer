@@ -1,0 +1,8 @@
+; STUDIO: the window editor, as a FULL-SCREEN app (like the Terminal: no window of its own). Opening it hands these
+; `shell` lines to the shell and the window manager ends: Studio runs with no name, so it starts on its START SCREEN
+; (your apps, numbered: press one to edit it, N for a new one, Esc to go back). When Studio ends, the second line
+; brings the desktop back.
+title Studio
+icon floppy.pic
+shell run /studio.bin
+shell run /wm.bin

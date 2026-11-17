@@ -1,0 +1,15 @@
+; DECORATOR: pictures that sit on the desktop, under the windows (a real app: app.asm). Its list: the BIG sprites
+; (/SYSTEM/DESIGN/BIGSPRTS/BIGSPRTS.TXT: 48 x 48, 64 x 64...; not offered for icons) first, then the ordinary sprites.
+; Choose one (click it, or Up / Down), see it on the right, Place (or Enter): it sits in the middle of the desktop.
+; On the desktop: drag a decoration with the RIGHT button to move it; right-click it: Remove decoration. They're kept in
+; /SYSTEM/DESIGN/DECOR.TXT, so they're there every time the desktop starts.
+title Decorator
+style classic
+size 46 14
+place 96 56
+hidden
+icon paint.pic
+text 0 0 Pictures (big sprites first):
+button 0 12 Place event 1
+button 8 12 Remove all event 2
+text #note 0 13 Right-drag a decoration to move it

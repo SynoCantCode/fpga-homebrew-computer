@@ -1,0 +1,15 @@
+# Build output
+impl/
+build/
+*.vcd
+*.out
+*.vvp
+*.fs
+*.log
+obj_dir/
+__pycache__/
+
+# Editor and OS clutter
+.vscode/
+Thumbs.db
+desktop.ini

@@ -1,0 +1,42 @@
+; PALETTE.TXT: the pixel screen's colours. On the card as /SYSTEM/DESIGN/PALETTE.TXT, read at every start-up.
+; Edit it on the computer:  run edit.bin system/design/palette.txt   then reboot (or type: colour load)
+; Numbers are hex, without 0x. A line starting with ; is a note. Words after the colour are a note too.
+;
+;   family N RRGGBB   colour family N (1-E) gets 16 shades, from almost black (shade 0) through RRGGBB
+;                     itself (shade 8) to almost white (shade F). A dot of colour 4, shade A = 4A.
+;   NN RRGGBB         one colour number NN (00-FF), exactly RRGGBB. F0-FF are the 16 free colours.
+;
+; Family 0 is the greys (00 black ... 0F white): set those one at a time if you want them different.
+; A line that's missing here keeps the colour the ROM starts with (sw/graphics/designs/palette.asm).
+
+family 1 5044C8   blue-violet (the shell's)
+family 2 008080   teal (the Windows 95 desktop)
+family 3 000080   navy (title bars)
+family 4 3C8CE6   sky blue
+family 5 30C8D8   aqua
+family 6 22AA22   green
+family 7 80D040   lime
+family 8 E8C830   yellow
+family 9 E07020   orange
+family A CC2222   red
+family B F080B0   pink
+family C AA22AA   magenta
+family D 7040A0   purple
+family E 805030   brown  (try E8DCB8 for a cream)
+
+F0 C0C0C0   Windows 95 silver
+F1 808080   bevel shadow grey
+F2 E8E8E8   the text screen's white
+F3 0A246A   Windows 98 title bar, dark end
+F4 A6CAF0   Windows 98 title bar, light end
+F5 FFFFE1   tooltip yellow
+F6 66CCFF   Aero glass blue
+F7 B9E3FF   Aero glass, pale
+F8 39B54A   Aero grass green
+F9 FFD700   gold
+FA FF6EC7   hot pink
+FB 00FF00   pure green
+FC 0000FF   pure blue
+FD FF0000   pure red
+FE FF00FF   pure magenta
+FF 000000   black

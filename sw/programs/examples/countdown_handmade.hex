@@ -1,0 +1,43 @@
+// Countdown: stores 10 down to 1 at 0x0000_0100, then halts
+// Format per instruction: hex word, binary split into fields, what each field is
+
+// 0x00  LOADLO R1, 0x000A        counter = 10
+0110000A
+//  0000 0001 | 0001 | 0000 | 0000 0000 0000 1010
+//  LOADLO      R1     -      0x000A
+
+// 0x04  LOADLO R2, 0x0001        step = 1
+01200001
+//  0000 0001 | 0010 | 0000 | 0000 0000 0000 0001
+//  LOADLO      R2     -      0x0001
+
+// 0x08  LOADLO R3, 0x0100        pointer = 0x0000_0100
+01300100
+//  0000 0001 | 0011 | 0000 | 0000 0001 0000 0000
+//  LOADLO      R3     -      0x0100
+
+// 0x0C  loop: STORE R1, [R3 + 0x0000]        save the counter at the pointer
+10130000
+//  0001 0000 | 0001 | 0011 | 0000 0000 0000 0000
+//  STORE       R1     R3     +0x0000
+//              value  address
+
+// 0x10  ADDI R3, R3, 0x004        pointer + 4, flags untouched
+24330004
+//  0010 0100 | 0011 | 0011 | 0000 | 0000 0000 0100
+//  ADDI        R3     R3     none   0x004
+
+// 0x14  SUB R1, R1, R2        counter - 1, saves all flags
+2611F200
+//  0010 0110 | 0001 | 0001 | 1111 | 0010 | 0000 0000
+//  SUB         R1     R1     NZCV   R2     zeros
+
+// 0x18  JNZ loop        back 3 instructions while Z = 0
+8200FFFD
+//  1000 0010 | 0000 | 0000 | 1111 1111 1111 1101
+//  JNZ         -      -      -3
+
+// 0x1C  HALT
+00000000
+//  0000 0000 | 0000 | 0000 | 0000 0000 0000 0000
+//  HALT

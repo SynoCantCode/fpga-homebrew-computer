@@ -1,0 +1,8 @@
+; HELLO: a real app (made by new_app.py). Its window: change it here or in Studio (run studio.bin hello).
+title Hello
+style classic
+size 30 8
+place 360 280
+text 0 0 Hello from Hello!
+canvas 0 1 30 5
+button 0 7 Colour event 1

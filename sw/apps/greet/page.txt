@@ -1,0 +1,11 @@
+; GREET: the example of NAMED PIECES. The page names two of its pieces (#name, #greeting); the program (app.asm)
+; never draws anything itself: it reads the input called name and changes the text called greeting.
+title Greet
+style classic
+size 30 6
+place 200 150
+hidden
+text 0 0 Your name, then Enter:
+input #name 0 1 20 1
+text #greeting 0 3 (nobody yet)
+button 0 5 Clear event 1

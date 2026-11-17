@@ -1,0 +1,10 @@
+; PONG: a real app: its code is APP.BIN (from app.asm: make_app.py). The computer plays the left paddle, you the
+; right one (1 player), or two people play (2): W / S and the arrows. R: a new game, M: the menu. Drawn by the app.
+; (hidden: it starts closed; its desktop icon or taskbar button opens it)
+title Pong
+style minimal
+size 40 16
+place 160 48
+hidden
+icon computer.pic
+label 00
