@@ -32,6 +32,6 @@ Software
 
 ## Notes
 
-AI Aided Assembly Code
+I designed the OS, but a decent portion of its code was written by AI, as a proof of concept for a custom language. All of it is in my own assembly language, for the instruction set and assembler I made.
 
 The assembler, test benches and build scripts are not in this repo, so it will not build straight from here.
